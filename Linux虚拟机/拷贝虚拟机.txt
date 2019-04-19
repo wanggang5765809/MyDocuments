@@ -1,0 +1,4 @@
+copy ÐéÄâ»ú  https://blog.csdn.net/hll19950830/article/details/79761251
+
+systemctl disable  NetworkManager.service
+

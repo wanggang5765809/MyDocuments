@@ -1,0 +1,7 @@
+zht-msyql-01£ºroot£º123456
+zht-msyql-02£ºroot£º123456
+zht-msyql-03£ºroot£º123456
+zht-msyql-04£ºroot£º123456
+zht-msyql-05£ºroot£º123456
+zht-msyql-06£ºroot£º123456
+zht-msyql-07£ºroot£º123456

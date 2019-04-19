@@ -1,0 +1,27 @@
+systemctl stop firewalld.service #停止firewall
+systemctl disable firewalld.service #禁止firewall开机启动
+firewall-cmd --state #查看默认防火墙状态（关闭后显示notrunning，开启后显示running）
+yum install gcc-c++
+yum install tcl
+tar zxvf redis-4.0.9.tar.gz -C /usr/local/
+cd /usr/local/
+mv redis-4.0.9/ redis4.0.9
+cd redis4.0.9/
+make MALLOC=libc
+#中间有一步是test run 巴拉巴拉的
+make test
+cd src && make install
+#启动redis 方式一
+cd src  ./redis-server
+#启动redis 方式二 & 表示后台启动
+./redis-server &
+#启动redis 方式三 指定配置文件启动 ，/etc/redis/6379.conf 是具体的配置文件
+./redis-server /etc/redis/6379.conf
+
+
+====================
+#连接redis 没有指定端口号，默认就连接6379
+./redis-cli
+
+#连接redis 指定端口号
+./redis-cli -p 6379

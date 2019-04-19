@@ -1,0 +1,7 @@
+root密码都是123456
+mysql root密码都是654123
+ip都是192.168.41 网段
+
+修改主机名
+
+win查看本机dns  netsh interface ip show dns

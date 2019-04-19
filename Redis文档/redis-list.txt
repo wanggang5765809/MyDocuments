@@ -1,0 +1,16 @@
+一个是lpush（先进后出），一个是rpush（先进先出），redis可以做一个简单mq
+linsert 
+ eg:linsert list before "集合元素" "插入元素"
+    linsert list before "one" "zero" 在one之前插入zero
+lset 将指定下标得元素替换掉
+lrem 删除元素 返回删除元素的个数 如果有重复得元素都会被删除
+ltrim 保留指定key的值范围内的数据
+lpop 从list的头部删除元素，并返回删除元素
+rpop 从list的尾部删除元素，并返回删除元素
+rpoplpush 第一步从尾部删除元素，然后第二部并从头部加入元素
+index 返回名称未key得list中 index位置得元素
+llen 返回元素的个数
+
+
+list元素可以重复  set元素不可以重复
+

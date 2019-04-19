@@ -1,0 +1,27 @@
+﻿创建get/set   alt+insert
+
+创建构造函数  alt+insert  Constructor
+
+代码操作：
+		添加
+
+		    Shift+Enter
+
+		复制
+
+		    Ctrl+D
+
+		移动
+
+		    Ctrl+Shift+↑/↓  或者  Alt+Shift+↑/↓
+
+		删除
+
+		    Ctrl+Y
+
+new的返回获取 ctrl + alt + v   光标在new的最后
+
+
+重写接口实现类: Ctrl+I  重写接口里面的方法
+
+ctrl+n  搜索源码里面的类

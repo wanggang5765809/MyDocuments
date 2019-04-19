@@ -1,0 +1,17 @@
+情况1：刚刚搭建得zk集群。
+	刚初始化得机器，按照myid1 2 3启动zk，启动myid 1 后服务器都会优先给自己投票，发布自己得投票结果（myid，zxid）给集群中其他得服务器，但是此时myid 2 3得服务器还没有启动，myid 1就一直处于lokking状态。
+
+	接着启动myid 2，myid 2 优先给自己投票，然后也是发布自己得投票结果（mydi，zxid），myid 2得zxid和myid 1得zxid是一样，当zxid一样就会去和myid1交换投票结果，对比myid，第二台得myid大于第一台得myid，所以第二台为leader。
+
+	接着启动myid 3，myid 3 给自己投票，同时发布自己投票结果，zxid与myid 1 和myid 2一样，对比myid 3，无疑myid 3 得myid 是最大得，但是此时集群中已经有了leader。这个时候只能成为follow
+
+
+情况2：zk得leander宕机得时候
+		如果leader发生宕机，就没有办法对外提供服务，此时会进入leader得重新选举，选举基本和“情况1”大致一样。
+		leader宕机，其他得follow会改变自己得状态，改为looking状态，进入选举状态，
+
+		zxid不一样的情况：
+		优先对比zxid，如果myid2 的zxid大于myid3 的zxid，意味着myid2的数据最新，那么此时myid2 为leader
+
+		zxid一样的情况：
+		对比myid，myid大就选举为leader。

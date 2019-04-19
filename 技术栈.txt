@@ -1,0 +1,9 @@
+◎ 熟悉JVM 内存管理，GC 回收策略以及多线程技术。 --- jvm gc看书,反射机制，框架的哪里用到反射了，动态代理，cjlib jdk原生动态代理，lamda表达式是怎么回事，jdk8有什么新特性，9有什么新特性？
+◎ 熟练spring、springmvc、spring Boot、spring Cloud、ssm等开源框架。 ---找面试题
+◎ 熟练mysql 数据库，初步了解 sqlserver、oracle 数据库。 --- mysql面试题找知数堂群里资料
+◎ 熟练redis，mongoDB等NoSQL 数据库。 --- redis找百度
+◎ 熟练elasticsearch 检索引擎，了解solr 。 ---- es面试题找百度 结合小D
+◎ 熟练dubbo、zookeeper 等开源框架。 --- 找百度 结合小D
+◎ 熟练消息队列activeMQ，rabbitMQ、kafka 等消息中间件  ---rocketmq 找到博客了，把博客的东西熟悉一下。
+◎ 熟悉常用的linux命令，可根据业务需要编写脚本 ---
+◎ 熟练使用接口测试工具jmeter
