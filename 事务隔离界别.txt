@@ -1,0 +1,21 @@
+王刚:
+read uncommitted：一个sessionA开启事务update数据，update之后没有执行commit，再另外一个sessionB就可以读取到还没有commit的数据。会引发什么问题？读到了为提交事务修改的数据-脏读
+			read committed：解决了读未提交隔离级别的问题，在一个sessionA开启事务update数据，另外一个sessionB开启事务查询数据，sessionB事务中同一条sql在多次执行读取数据，第一次和最后一次可能读取的数据不一致。出现了幻读。
+							也就是出现了不可重复读   https://blog.csdn.net/oyw5201314ck/article/details/79621954
+			repeatable read：解决了幻读问题，在一个sessionA开启事务update数据并且commit之后，另外一个sessionB开启事务查询数据，事务中同一条sql在多次执行读取数据查询到的结果都是sessionA
+							 update之前的数据，只有在当前sessionB commit之后再去查询才可以查询到sessionA更新之后的数据。
+
+			那么repeatable read怎么实现将每个事务隔离开呢？innodb的mvcc，mvcc 多版本并发控制技术。
+			innodb一条记录：除了存数据之外还会存data_trx_id,data_roll_ptr,delete_bit,
+			data_trx_id：记录的tranxcation 的id，每处理一个tranxcation的时候id会加1
+			data_roll_ptr:存储undo log的地址，当mysql进行事务操作的时候，会首先先写入log，undo log用来记录事务执行命令的记录。
+			delete_bit：在事务标识这条记录是否需要删除，commit之后就会物理删除。
+
+王刚:
+事务隔离级别 解决什么问题
+
+王刚:
+我还没自己测试
+
+王刚:
+但是思路就是 开两个窗口  一个设置隔离级别 同时update  另外一个查询

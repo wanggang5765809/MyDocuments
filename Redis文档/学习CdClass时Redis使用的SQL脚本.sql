@@ -32,3 +32,6 @@ CREATE TABLE `user_score` (
   `name` varchar(30) NOT NULL DEFAULT '' COMMENT '用户姓名',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+set sql_mode = '';
+set sql_mode = 'NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES';
