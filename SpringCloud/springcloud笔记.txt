@@ -1141,7 +1141,7 @@ management:
 
 
 
-
+-Dserver.port=8771
 
 
 
@@ -1203,7 +1203,8 @@ management:
 	            <artifactId>spring-cloud-config-client</artifactId>
 	        </dependency>
 
-	     2、修改对应服务的配置文件,把application.yml 改为 bootstrap.yml
+	     2、修改对应服务的配置文件,把application.yml 改为 bootstrap.yml   
+	     因为springboot 加载配置文件有顺序，修改为bootstrap.yml 目的是为了加载其内的配置文件
 			#指定注册中心地址
 			eureka:
 			  client:
@@ -1229,7 +1230,7 @@ management:
 			2.默认读取文件名是 服务名称
 
 
-
+面试：输入baidu.com 在网络中的详细过程，也可以说是http的详细请求。
 
 
 
