@@ -1140,7 +1140,7 @@ management:
 
 
 
-
+wanggang
 -Dserver.port=8771
 
 
@@ -1234,10 +1234,19 @@ management:
 
 
 
+
+
+
+
+
 第九章 微服务消息总线Bus结合消息队列RabbitMQ实战
 
 	1、消息总线Bus介绍和使用场景
 		简介：讲解消息总线Bus介绍和使用场景
+		上一章讲解配置中心只有再服务重启的时候才能从配置中心拉取新的配置文件，如果服务不重启即使修改了配置应用无法感知到，比如，修改了用户服务的配置，但是用户服务无法感知到，那么消息总线就可以再修改完配置后“通知”用户服务拉取新的配置。
+
+
+
 		1、什么是消息
 			一个事件，需要广播或者单独传递给某个接口
 
@@ -1315,7 +1324,7 @@ management:
 			rabbitmq： docker run -d -p 5672:5672 -p 15672:15672 rabbitmq:management
 			rabbitmq默认是5672,所以改为5672端口
 			
-			1、config-client加入依赖
+			1、config-client（config-client指的是需要拉取配置的服务）加入依赖
 						   
 		        <!--配置中心结合消息队列-->
 		       
@@ -1333,6 +1342,8 @@ management:
 			
 			官方文档：http://cloud.spring.io/spring-cloud-bus/single/spring-cloud-bus.html#_bus_refresh_endpoint
 			文档里面 暴露端点 management.endpoints.web.exposure.include=bus-refresh
+			
+
 
 			2、在配置文件中增加关于RabbitMQ的连接(如果是本机，则可以直接启动，采用默认连接配置)
 				spring:
@@ -1341,7 +1352,7 @@ management:
 				    port: 5672
 				    username: guest
 				    password: guest
-			
+				在配置文件中暴露监控（为什么要暴露监控？）
 				#暴露全部的监控信息
 				management:
 				  endpoints:
@@ -1349,16 +1360,20 @@ management:
 				      exposure:
 				        include: "*"
 
-			3、需要刷新配置的地方，增加注解 
+			3、需要刷新配置的地方，增加注解
 				@RefreshScope
 
-			4、访问验证 post方式：
+			4、访问验证 post方式：（手动）
 				http://localhost:8773/actuator/bus-refresh
-			
+				测试单节点，测试集群，集群测试
 
 			5、动态刷新配置: 在开发和测试环境使用，尽量少在生产环境使用
 
-
+wanggang
+		首先明确：“通知”是由谁发起，给谁的？
+			通知是手动(通过postman发送请求)，config-client中的注解@RefreshScope会让其注解的服务可以不启动服务重新加载配置文件，同时给mq一个消息，通知相同的服务拉取配置。
+			其他相同服务通过bus消息总线来拉取。
+		那么“通知”是怎么做的呢？通过webhook给mq发消息，mq通过广播给指定的服务来拉取配置。
 
 
 
@@ -1367,7 +1382,7 @@ management:
 
 	5、微服务相关项目改造配置中心
 	简介：把课程项目改造成配置中心讲解
-
+	config-client的配置文件里面保留注册中心，配置中心即可。
 	1、git里面新增对应项目的配置文件，都要添加下面的配置
 		#服务的名称
 		spring:
