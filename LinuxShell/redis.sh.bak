@@ -25,3 +25,30 @@ cd src  ./redis-server
 
 #连接redis 指定端口号
 ./redis-cli -p 6379
+
+
+======================安装后进行配置=======================
+以后台进程方式启动：
+
+1.修改/usr/local/redis-4.0.9/redis.conf：    daemonize no   将值改为yes 保存退出
+
+2.指定redis.conf文件启动：                           ./redis-server /usr/local/redis-4.0.6/redis.conf
+
+设置redis远程连接：
+
+1.因为redis默认设置允许本地连接，所以我们要将redis.conf中将bind 127.0.0.1 改为bind 0.0.0.0或者注释该行
+
+2.另外，阿里云ECS有一个安全组，找到并添加规则允许6379端口访问
+
+设置redis连接密码：
+
+在redis.conf中搜索requirepass这一行，然后在合适的位置添加配置
+
+requirepass yourpassword
+
+设置完成后执行/usr/local/bin/redis-server /usr/local/redis-4.0.6/redis.conf 更新配置
+--------------------- 
+作者：CocoaJerry 
+来源：CSDN 
+原文：https://blog.csdn.net/u010623954/article/details/80037078 
+版权声明：本文为博主原创文章，转载请附上博文链接！
