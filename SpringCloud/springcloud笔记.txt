@@ -1738,8 +1738,9 @@ wanggang
 			2) 推送本地镜像：
 			docker tag [ImageId] registry.cn-shenzhen.aliyuncs.com/xdclass/xdclass_images:[镜像版本号]
 			例子：
+			打成tag
 			docker tag 2f415b0e9a6e registry.cn-shenzhen.aliyuncs.com/xdclass/xdclass_images:xd_rabbitmq-v1.0.2
-
+			推送到仓库，推送的时候可能因为网络就会很慢。
 			docker push registry.cn-shenzhen.aliyuncs.com/xdclass/xdclass_images:xd_rabbitmq-v1.0.2
 
 			3)拉取镜像
