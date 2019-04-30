@@ -1,6 +1,2 @@
-1 实现第四章的代码
-2 查看redistmplate的源码
-3 学习lua脚本 1小时
-4 学习redis完第下一章
-5 总结springboot的注解
+﻿1 实现第四章的代码
 6 在虚拟机上安装学习使用的软件 jdk maven mysql redis mq mq监控 es 并全部启动
