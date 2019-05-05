@@ -3,10 +3,17 @@ http://www.cnblogs.com/danhuangpai/
 http://wubx.net/
 https://blog.csdn.net/linuxheik/article/details/62427759
 https://www.cnblogs.com/xuanzhi201111/p/4231412.html
+https://www.cnblogs.com/suoning/articles/5745263.html
 
 java-jvm
 https://www.cnblogs.com/jiyuqi/p/4547082.html
 https://www.cnblogs.com/charlesblc/p/5993804.html
+http://outofmemory.cn/c/java-outOfMemoryError
+
+java
+https://blog.csdn.net/qq_43555323/article/details/84779430
+https://www.cnblogs.com/wcyBlog/p/4657885.html
+
 
 idea
 https://blog.csdn.net/HALEN001/article/details/81137092

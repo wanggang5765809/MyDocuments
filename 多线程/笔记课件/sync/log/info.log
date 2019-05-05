@@ -1,0 +1,372 @@
+2018-10-07 22:36:08,649 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-07 22:36:09,119 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-07 22:36:09,208 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-07 22:36:09,223 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-07 22:36:09,241 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 处理数据发生异常=====》，{}
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may involve com.xdclass.our.mapper.StudentMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into student      ( name,                       sex,                       birth,                       department,                       add_time )       values ( ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$1(DealBusiImpl.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:40)
+	at com.xdclass.thread.Consumer.run(Consumer.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-07 22:36:28,204 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-07 22:36:28,787 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-07 22:36:40,328 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-07 22:36:40,879 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-07 22:36:40,981 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-07 22:36:40,994 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-07 22:36:41,016 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 处理数据发生异常=====》，{}
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may involve com.xdclass.our.mapper.StudentMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into student      ( name,                       sex,                       birth,                       department,                       add_time )       values ( ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$1(DealBusiImpl.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:40)
+	at com.xdclass.thread.Consumer.run(Consumer.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-07 22:37:12,518 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-07 22:37:13,051 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-07 22:37:13,151 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-07 22:37:13,169 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-15 23:42:08,960 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:42:09,636 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:42:09,738 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+2018-10-15 23:42:09,744 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败
+2018-10-15 23:42:09,745 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+2018-10-15 23:42:09,747 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败
+2018-10-15 23:42:09,750 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapper.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+2018-10-15 23:42:09,755 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败
+2018-10-15 23:43:50,812 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:43:51,367 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:44:16,509 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-15 23:44:16,517 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-15 23:44:16,523 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败
+2018-10-15 23:44:16,530 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败
+2018-10-15 23:44:16,541 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败
+2018-10-15 23:44:56,401 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:44:56,872 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:44:57,042 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-15 23:44:57,055 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-15 23:44:57,068 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update  student     set data_status = ?, deal_time = ?     where id =?
+### Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-15 23:44:57,096 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update  student     set data_status = ?, deal_time = ?     where id =?
+### Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-15 23:44:57,106 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update  student     set data_status = ?, deal_time = ?     where id =?
+### Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-15 23:46:03,225 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:46:03,779 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:46:28,897 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-15 23:46:28,904 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-15 23:46:28,910 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update  student     set data_status = ?, deal_time = ?     where id =?
+### Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-15 23:46:28,927 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update  student     set data_status = ?, deal_time = ?     where id =?
+### Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-15 23:46:28,938 [pool-1-thread-1] ERROR [com.xdclass.busi.impl.DealBusiImpl] - 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update  student     set data_status = ?, deal_time = ?     where id =?
+### Cause: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'dataStaus' in 'class com.xdclass.middle.model.Student'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+2018-10-15 23:47:24,523 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:47:25,067 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:47:25,243 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-15 23:47:25,254 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-15 23:48:41,542 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:48:42,076 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:48:42,300 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-15 23:48:42,322 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-15 23:54:59,302 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:54:59,868 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:55:00,273 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-15 23:55:00,302 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-15 23:59:13,588 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-15 23:59:14,128 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-15 23:59:14,477 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-15 23:59:14,508 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2018-10-16 00:00:31,819 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2018-10-16 00:00:32,392 [Thread-0] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2018-10-16 00:00:32,761 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2018-10-16 00:00:32,770 [pool-1-thread-1] INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.

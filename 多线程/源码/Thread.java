@@ -1738,6 +1738,8 @@ class Thread implements Runnable {
      *
      * @since   1.5
      * @see #getState
+	 
+		线程的状态。
      */
     public enum State {
         /**
