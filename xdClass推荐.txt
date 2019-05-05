@@ -1,0 +1,104 @@
+1.进程 队列 线程 加锁 死锁  https://blog.csdn.net/ybw_2569/article/details/88542315
+2.ssh免密登陆 和 mpi并行计算 集群计算配置方法 https://blog.csdn.net/qq_36819130/article/details/88585592
+
+1、Java的23种设计模式---观察者模式，我们应该在什么时候用观察者模式     https://blog.csdn.net/qq1021979964/article/details/88558878  
+2、互联网面试50 道 Redis 面试题，学了Redis课程第一季的同学进来看看自己答对了几道？
+ https://blog.csdn.net/yelvgou9995/article/details/88319146
+
+1、浅谈Nginx负载均衡原理与实现  https://blog.csdn.net/u012517198/article/details/50910739
+2、MySQL-基于执行计划原理对SQL调优、快速插入百万数据
+https://blog.csdn.net/qq_42709262/article/details/88583797
+
+1、虚拟机网络模型详解，看这篇就够了（图文并茂）
+https://www.cnblogs.com/bakari/p/10592421.html
+2、用SpringCloud进行微服务架构演进
+https://www.cnblogs.com/zhangs1986/p/10546973.html
+
+1、BATJ面试必会之 Spring 篇(一)
+https://blog.csdn.net/qq_40241957/article/details/88660209
+2、全面分析前端的网络请求方式
+https://juejin.im/post/5c9ac607f265da6103588b31
+
+1、Web 性能优化：21种优化CSS和加快网站速度的方法
+https://juejin.im/post/5c9a265bf265da611846b9ab
+ 
+2、shell在手分析服务器日志不愁
+https://blog.csdn.net/hyr352114576/article/details/73198607
+
+
+1、前端面试总结之：js跨域问题       
+https://juejin.im/entry/5c9cd4285188252d735a9b6b
+2、JS异步编程之Promise
+https://juejin.im/entry/5c724f51f265da2de80f6824
+
+
+1、MySQL 复制 - 性能与扩展性的基石：概述及其原理
+https://www.cnblogs.com/BeiGuo-FengGuang/p/10632340.html
+2、Dubbo 一些你不一定知道但是很好用的功能
+https://blog.csdn.net/madongyu1259892936/article/details/85789154
+ 
+
+1、作为一个中高级开发工程师，你知道springMVC执行的原理吗？   https://blog.csdn.net/zhangliangzi/article/details/50635576    
+2、电商秒杀只多少   
+https://blog.csdn.net/DoUUnderstand/article/details/78484729
+
+
+1、JAVA 并发编程之四：Java内存模型+Atomic(原子性)+Violate(可见性)+有序性
+https://blog.csdn.net/cbk861110/article/details/88880934
+2、关于分布式锁原理的一些学习与思考-redis分布式锁，zookeeper分布式锁
+https://www.cnblogs.com/JJJ1990/p/10496850.html
+
+
+1.浅谈系统高并发解决方案
+https://blog.csdn.net/ChiChengIT/article/details/49078525 
+2.Redis高可用技术解决方案   https://blog.csdn.net/u014209205/article/details/82113258
+
+1.Java高级工程师面试题总结及参考答案
+https://www.cnblogs.com/java1024/p/8594784.html
+2.MySQL 性能优化的最佳20多条经验分享
+https://www.cnblogs.com/pengyunjing/p/6591660.html
+
+<HTTP协议详解>由浅入深看HTTP
+https://www.cnblogs.com/guguli/p/4758937.html
+
+IntelliJ IDEA设置类注释和方法注释模板  
+https://blog.csdn.net/sikefeng/article/details/80557265
+Rocketmq原理&最佳实践
+https://www.jianshu.com/p/2838890f3284
+
+
+1、浅谈系统高并发解决方案
+https://blog.csdn.net/ChiChengIT/article/details/49078525     
+2、Redis高可用技术解决方案   
+https://blog.csdn.net/u014209205/article/details/82113258
+
+
+1、selenium用法详解
+https://blog.csdn.net/qq_29186489/article/details/78661008
+2、深入解析Spring原理
+https://blog.csdn.net/u012868901/article/details/79479300
+ 
+
+重学TCP/IP 协议 与三次握手	https://juejin.im/post/5ca95ed46fb9a05e3d0a8533 
+Webpack 4 配置最佳实践https://juejin.im/post/5b304f1f51882574c72f19b0
+axios配置大全
+https://segmentfault.com/a/1190000018206604 
+
+
+
+1、时下很火的微服务知识  https://blog.csdn.net/wuxiaobingandbob/article/details/78642020   
+2、Java高并发解决方案 
+https://blog.csdn.net/jimmy609/article/details/37810591
+
+学习webpack4 - 抽离公共代码
+https://blog.csdn.net/weixin_33963594/article/details/88611844
+作用域和作用域链及预解析
+https://blog.csdn.net/sunlizhen/article/details/89094232
+
+
+ shell脚本实现监控服务器mysql，解决服务器内存不足自动关闭mysql问题
+https://www.urlteam.org/2016/04/shell
+
+Linux下Shell实现服务器IP监测 https://blog.csdn.net/kaixin89/article/details/45332529 
+ 
+ 
