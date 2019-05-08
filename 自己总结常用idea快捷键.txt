@@ -25,3 +25,5 @@ new的返回获取 ctrl + alt + v   光标在new的最后
 重写接口实现类: Ctrl+I  重写接口里面的方法
 
 ctrl+n  搜索源码里面的类
+
+ctrl+q  查看方法的参数
