@@ -47,8 +47,10 @@ cd src  ./redis-server
 requirepass yourpassword
 
 设置完成后执行/usr/local/bin/redis-server /usr/local/redis-4.0.6/redis.conf 更新配置
---------------------- 
-作者：CocoaJerry 
-来源：CSDN 
-原文：https://blog.csdn.net/u010623954/article/details/80037078 
-版权声明：本文为博主原创文章，转载请附上博文链接！
+
+
+
++++++++++++++++++++++++++++++主从安装+++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++++集群安装+++++++++++++++++++++++++++++++++++++
